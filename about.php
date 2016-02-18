@@ -25,6 +25,6 @@
 
 
 
-	
 
+<!-- including footer -->
 	<?php include('includes/footer.php'); ?>
