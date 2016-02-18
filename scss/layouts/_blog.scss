@@ -1,0 +1,34 @@
+/* Blog */
+
+.blog-post{
+@include add-background(#fff);
+overflow: hidden;
+
+margin-bottom:30px;
+
+
+	h3.page-header{
+		margin-top:5px !important;
+	}
+	p{
+		padding:5px;
+	}
+
+	.blog-featured img{
+		width:100%;
+		height:auto;
+		max-height: 400px;
+		overflow: hidden;
+
+
+	}
+
+}
+
+
+.post-meta{
+	background:#f3f3f3;
+	padding:10px 10px 10px 10px;
+	@include add-border(1px, #cccccc, all);
+	margin-bottom:20px;
+}

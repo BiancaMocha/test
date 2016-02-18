@@ -1,0 +1,29 @@
+/* Buttons */
+
+ .btn-primary{
+	@include add-background(transparent);
+	@include add-border(2px, $dark-color, all);
+	@include border-radius(0px);
+	span{
+		color:$dark-color !important;
+	}
+}
+
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:target{
+	background: transparent !important;
+	text-decoration: none;
+	@include add-border(2px, rgba(0, 0, 0, 0.4), all);
+}
+.btn-success{
+ @include add-background($light-color);
+ @include add-border(2px, $dark-color, all);
+ @include border-radius(0px);
+ span{
+   color:$dark-color !important;
+ }
+}
+
+ .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success:target{
+ @include add-background($primary-color);
+ @include add-border(2px, rgba(0, 0, 0, 0.4), all);
+}

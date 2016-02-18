@@ -1,0 +1,387 @@
+/*
+	Obatzda Beer and Cheese Blog
+	Author: Fatima Sheremetyeva
+	Version: 0.0.1
+*/
+/* BASE - Base styles, variables, mixins, etc */
+/* Font Colors */
+/* Background Colors */
+/* Showcase Area */
+/* Mixins */
+/* line 1, ../scss/base/_normalize.scss */
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-weight: bold;
+}
+
+/* line 7, ../scss/base/_normalize.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 11, ../scss/base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 16, ../scss/base/_normalize.scss */
+.no-pad-top {
+  padding-top: 0;
+}
+
+/* line 20, ../scss/base/_normalize.scss */
+.extra-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 25, ../scss/base/_normalize.scss */
+.top-inner {
+  padding: 90px 0 30px 0;
+}
+
+/* Image Sizes */
+/* line 30, ../scss/base/_normalize.scss */
+.img-xsm {
+  width: 100px;
+}
+
+/* line 31, ../scss/base/_normalize.scss */
+.img-sm {
+  width: 200px;
+}
+
+/* line 32, ../scss/base/_normalize.scss */
+.img-lg {
+  width: 400px;
+}
+
+/* line 33, ../scss/base/_normalize.scss */
+.img-xlg {
+  width: 700px;
+}
+
+/* line 35, ../scss/base/_normalize.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 3, ../scss/base/_base.scss */
+body {
+  font-family: "Oxygen", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  letter-spacing: 0.04em;
+  color: #666666;
+  background: #efefef;
+}
+
+/* line 15, ../scss/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #d9a861;
+}
+
+/* line 19, ../scss/base/_base.scss */
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: #d9a861;
+}
+
+/* line 24, ../scss/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 28, ../scss/base/_base.scss */
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* MODULES - Individual site components */
+/* line 1, ../scss/modules/_typography.scss */
+.text-danger {
+  color: #d9a861;
+}
+
+/* Buttons */
+/* line 3, ../scss/modules/_buttons.scss */
+.btn-primary {
+  background: transparent;
+  border: 2px solid #3e4249;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 7, ../scss/modules/_buttons.scss */
+.btn-primary span {
+  color: #3e4249 !important;
+}
+
+/* line 12, ../scss/modules/_buttons.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:target {
+  background: transparent !important;
+  text-decoration: none;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+/* line 17, ../scss/modules/_buttons.scss */
+.btn-success {
+  background: #b5b5b5;
+  border: 2px solid #3e4249;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 21, ../scss/modules/_buttons.scss */
+.btn-success span {
+  color: #3e4249 !important;
+}
+
+/* line 26, ../scss/modules/_buttons.scss */
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success:target {
+  background: #d9a861;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+/* Sections */
+/* line 3, ../scss/modules/_sections.scss */
+section {
+  padding: 30px 0;
+}
+
+/* line 8, ../scss/modules/_sections.scss */
+.section-showcase {
+  height: 500px;
+  background: url("../img/showcase2.jpg") no-repeat;
+  background-size: cover;
+}
+/* line 13, ../scss/modules/_sections.scss */
+.section-showcase .showcase-content {
+  padding: 170px 15px;
+  text-align: center;
+}
+/* line 18, ../scss/modules/_sections.scss */
+.section-showcase h1 {
+  color: #3e4249;
+}
+
+/* line 22, ../scss/modules/_sections.scss */
+.hero {
+  height: 400px;
+  background: url("../img/hero.png") center center no-repeat fixed;
+  background-size: cover;
+}
+/* line 27, ../scss/modules/_sections.scss */
+.hero .hero-content {
+  padding: 170px 15px;
+  text-align: center;
+}
+/* line 31, ../scss/modules/_sections.scss */
+.hero h1 {
+  color: #3e4249;
+}
+
+/* line 35, ../scss/modules/_sections.scss */
+.section-main {
+  margin-top: 34px;
+  margin-bottom: -28px !important;
+}
+
+/* line 40, ../scss/modules/_sections.scss */
+.section-primary, .section-primary-a, .section-primary-b {
+  background: #d9a861;
+}
+
+/* line 44, ../scss/modules/_sections.scss */
+.section-primary-a {
+  border-top: 4px solid #6c6353;
+}
+
+/* line 49, ../scss/modules/_sections.scss */
+.section-primary-b {
+  border-bottom: 4px solid #6c6353;
+}
+
+/* line 54, ../scss/modules/_sections.scss */
+.section-secondary {
+  background: #6c6353;
+  margin-top: 0px !important;
+}
+
+/* line 58, ../scss/modules/_sections.scss */
+.section-light {
+  background: #b5b5b5;
+}
+
+/* line 62, ../scss/modules/_sections.scss */
+.section-dark {
+  background: #3e4249;
+  color: #fff;
+}
+
+/* line 67, ../scss/modules/_sections.scss */
+.section-login {
+  background: #3e4249;
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+
+/* Carousel */
+/* line 3, ../scss/modules/_components.scss */
+.carousel {
+  margin-bottom: 0px;
+}
+
+/* line 7, ../scss/modules/_components.scss */
+.carousel img {
+  width: 100%;
+}
+
+/* Searchbox */
+/* line 3, ../scss/modules/_forms.scss */
+.search {
+  width: 100%;
+}
+/* line 6, ../scss/modules/_forms.scss */
+.search h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 11, ../scss/modules/_forms.scss */
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 80%;
+  border: 2px solid #d9a861;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+/* line 21, ../scss/modules/_forms.scss */
+.search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  vertical-align: middle;
+  margin-left: -4px;
+  overflow: hidden;
+}
+/* line 29, ../scss/modules/_forms.scss */
+.search img {
+  margin-left: -9px;
+  margin-top: -12px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/* LAYOUTS - Page layout styles */
+/* Navbar */
+/* line 4, ../scss/layouts/_nav.scss */
+.navbar {
+  width: 90%;
+  margin: auto;
+  min-height: 60px;
+  background: rgba(108, 99, 83, 0.7);
+  margin-bottom: 30px;
+  border: none;
+}
+/* line 12, ../scss/layouts/_nav.scss */
+.navbar a {
+  color: #fff !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-bottom: 24px !important;
+  padding-top: 20px !important;
+}
+/* line 20, ../scss/layouts/_nav.scss */
+.navbar img {
+  width: 140px;
+  height: auto;
+  margin-top: -28px;
+  margin-left: -50px;
+}
+
+/* line 31, ../scss/layouts/_nav.scss */
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background: #d9a861;
+  color: #b5b5b5;
+}
+
+/* Footer */
+/* line 3, ../scss/layouts/_footer.scss */
+.footer-main {
+  background: #3e4249;
+  border-top: 5px solid #6c6353;
+  min-height: 70px;
+  padding: 8px 0;
+  margin-top: 20px;
+}
+/* line 12, ../scss/layouts/_footer.scss */
+.footer-main a {
+  color: #ffffff;
+}
+/* line 16, ../scss/layouts/_footer.scss */
+.footer-main ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 21, ../scss/layouts/_footer.scss */
+.footer-main li {
+  line-height: 1.8em;
+  list-style: none;
+  vertical-align: middle;
+}
+
+/* Blog */
+/* line 3, ../scss/layouts/_blog.scss */
+.blog-post {
+  background: white;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+/* line 10, ../scss/layouts/_blog.scss */
+.blog-post h3.page-header {
+  margin-top: 5px !important;
+}
+/* line 13, ../scss/layouts/_blog.scss */
+.blog-post p {
+  padding: 5px;
+}
+/* line 17, ../scss/layouts/_blog.scss */
+.blog-post .blog-featured img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+/* line 29, ../scss/layouts/_blog.scss */
+.post-meta {
+  background: #f3f3f3;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 2, ../scss/layouts/_mobile.scss */
+  .search {
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* line 10, ../scss/layouts/_mobile.scss */
+  .footer-main ul {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 15, ../scss/layouts/_mobile.scss */
+  .footer-main h4 {
+    text-align: center;
+  }
+}
